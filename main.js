@@ -156,7 +156,7 @@ if(usePairingCode && !conn.authState.creds.registered) {
 		if(useMobile) throw new Error('Cannot use pairing code with mobile api')
 		const { registration } = { registration: {} }
 		let RapikzBjir = await question(chalk.red('MASUKAN PASSWORDNYA DLU COK😹: \n'));
-    if (RapikzBjir.trim().toLowerCase() !== 'mikaXrapikz') {
+    if (RapikzBjir.trim().toLowerCase() !== 'm') {
       console.log(chalk.red('Ups PW salah. Coba lagi😹.'));
       process.exit();
     }
