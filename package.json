@@ -26,16 +26,16 @@
         "MD",
         "baileys-md"
     ],
-    "homepage": "https://github.com/Rapikz-kwontwol/Elaina",
+    "homepage": "https://github.com/Rapikz-kwontwol/Mika-istrinya-Rapikz",
     "author": {
         "name": "Hehe"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/Rapikz-kwontwol/Elaina.git"
+        "url": "git+https://github.com/Rapikz-kwontwol/Mika-istrinya-Rapikz.git"
     },
     "bugs": {
-        "url": "https://github.com/Rapikz-kwontwol/Elaina/issues"
+        "url": "https://github.com/Rapikz-kwontwol/Mika-istrinya-Rapikz/issues"
     },
     "license": "GPL-3.0-or-later",
     "dependencies": {
