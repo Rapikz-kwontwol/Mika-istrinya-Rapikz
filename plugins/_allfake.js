@@ -62,9 +62,9 @@ handler.all = async function (m) {
 				externalAdReply: {
                     showAdAttribution: true,
 					title: '',
-					body: 'BOT WA', 
+					body: 'MIKA-AI', 
 					mediaUrl: sgc,
-					description: 'BOT AJAH', 
+					description: 'MIKA-AI', 
 					previewType: "PHOTO",
 					thumbnail: await (await fetch(pic)).buffer(),
 					sourceUrl: 'https://s.id/rapikzhahay'			
