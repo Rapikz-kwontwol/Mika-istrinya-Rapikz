@@ -75,7 +75,7 @@ conn.sendFile(m.chat, eror, "anu.mp3", null, m, true, {
 }}
 handler.help = ['ytv']
 handler.tags = ['downloader']
-handler.command = /^(ytv)$/i
+handler.command = /^(ytv|ytmp4|ytvideo)$/i
 handler.limit = false
 handler.register = true
 
