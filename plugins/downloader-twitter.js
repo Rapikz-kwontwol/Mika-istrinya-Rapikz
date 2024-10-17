@@ -1,15 +1,27 @@
 import fetch from 'node-fetch'
 
- let handler = async (m, { conn, text, usedPrefix, command }) => {
-   if (!text) throw `*Example:* ${usedPrefix}${command} https://x.com/scvrecrowx/status/1820036885831409716`;
-conn.sendMessage(m.chat, { react: { text: '🕒', key: m.key }})
- let ouh = await fetch(`https://api.ssateam.my.id/api/twitter?url=${text}`)
-  let gyh = await ouh.json() 
-	let url = `${gyh.data.response.video_hd}`
-	conn.sendFile(m.chat, url, null, `*T I T L E :*\n${gyh.data.response.desc}`, m)
-}
-handler.help = ['twitter','xdl']
-handler.tags = ['downloader']
-handler.command = /^(twitter|xdl)$/i
-handler.premium = false
-export default handler
+let handler = async (m, { conn, usedPrefix, command, text }) => {
+    if (!text) return m.reply(• *Example :* ${usedPrefix}${command} *[url X / Twitter]*);
+    
+    m.reply(wait);
+    
+    try {
+        let res = await fetch(`https://api.ryzendesu.vip/api/downloader/twitter?url=${text}`);
+        let json = await res.json();
+        
+        if (json.status && json.type === 'video') {
+            let videoUrl = json.media[0].url;
+            await conn.sendFile(m.chat, videoUrl, '', '[ X / TWITTER DOWNLOADER ]', m);
+        } else {
+            m.reply('Failed to download video. Please check the URL or try again later.');
+        }
+    } catch (err) {
+        console.error(err);
+        m.reply('An error occurred while fetching the video.');
+    }
+};
+
+handler.help = ["twitter", "x"].map((a) => a + " [url]");
+handler.tags = ["downloader"];
+handler.command = ["twitter", "x"];
+export default handler;
