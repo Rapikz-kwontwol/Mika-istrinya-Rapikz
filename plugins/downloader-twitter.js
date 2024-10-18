@@ -1,7 +1,7 @@
 import fetch from 'node-fetch'
 
 let handler = async (m, { conn, usedPrefix, command, text }) => {
-    if (!text) return m.reply(• *Example :* ${usedPrefix}${command} *[url X / Twitter]*);
+    if (!text) return m.reply(`• *Example :* ${usedPrefix}${command} *[url X / Twitter]*`);
     
     m.reply(wait);
     
